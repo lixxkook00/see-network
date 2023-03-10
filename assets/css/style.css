@@ -895,6 +895,9 @@ body {
   font-size: 13px;
   height: 24px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dapp .navigate .right .lang > uni-text {
   margin-right: 5px;
@@ -1050,20 +1053,20 @@ body {
   width: 33.33333%;
   float: left;
 }
-.dapp .home .tabs > ul > li > uni-view {
+.dapp .home .tabs > ul > li > a {
   margin: 6px;
   display: block;
   background: #fff;
   height: 104px;
   border-radius: 6px;
 }
-.dapp .home .tabs > ul > li > uni-view > uni-image {
+.dapp .home .tabs > ul > li > a > uni-image {
   width: 50%;
   height: 50%;
   margin: auto;
   margin-top: 14px;
 }
-.dapp .home .tabs > ul > li > uni-view > p {
+.dapp .home .tabs > ul > li > a > p {
   font-weight: 500;
   font-size: 13px;
   padding-top: 6px;
@@ -1089,6 +1092,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 .dapp .home .activity .content > uni-view {
   width: 50%;
@@ -2067,6 +2071,11 @@ body {
   margin: 0;
   list-style: none;
 }
+
+.dapp .article > ul > li a {
+  width: 100%;
+}
+
 .dapp .article > ul > li {
   padding: 12px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -2074,31 +2083,32 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.dapp .article > ul > li:last-child {
+.dapp .article > ul > li:last-child ,
+.dapp .article > ul > li > a{
   border-bottom: none;
 }
-.dapp .article > ul > li > .icon {
+.dapp .article > ul > li > a > .icon {
   width: 41px;
   text-align: center;
   padding-right: 4px;
 }
-.dapp .article > ul > li > .icon > uni-text {
+.dapp .article > ul > li > a > .icon > uni-text {
   font-size: 18px;
   color: #C23122;
 }
-.dapp .article > ul > li > .word {
+.dapp .article > ul > li > a > .word {
   text-align: left;
   width: 100%;
   font-size: 13px;
   color: #555;
 }
-.dapp .article > ul > li > .word > .time {
+.dapp .article > ul > li > a > .word > .time {
   display: block;
   padding-top: 6px;
   font-size: 12px;
   font-style: italic;
 }
-.dapp .article > ul > li > .word > .time > span {
+.dapp .article > ul > li > a > .word > .time > span {
   background: #eee;
   padding: 2px 4px;
   margin-right: 5px;
@@ -2106,7 +2116,7 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-.dapp .article > ul > li > .more {
+.dapp .article > ul > li > a > .more {
   width: 28px;
   color: #999;
 }
@@ -3430,7 +3440,14 @@ uni-tabbar.uni-tabbar-bottom .uni-tabbar {
   width: 100%;
   margin: auto;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  transition: all 0.2s linear;
 }
+
+.uni-tabbar-bottom{
+  transition: all 0.2s linear;
+}
+
 .uni-app--showtabbar uni-page-wrapper::after {
   background: #f6f6f6;
 }
@@ -7927,4 +7944,22 @@ a{
 .uni-tabbar__item.active i,
 .uni-tabbar__item.active .uni-tabbar__label{
   color: #C23122 !important;
+}
+
+.lang i {
+    margin-right: 4px;
+}
+
+.chat i{
+  color: #fff;
+}
+
+.article .icon {
+  color: #C23122;
+}
+
+.dapp .article > ul > li a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
