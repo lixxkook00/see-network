@@ -24,3 +24,12 @@ if(closeLanguage != null){
         languageMain.classList.remove('active')
     }
 }
+
+// effect input
+const inputEffect = document.querySelectorAll('.uni-input-input')
+
+inputEffect.forEach(element => {
+    element.addEventListener("change", (event) => {
+        element.parentNode.parentNode.parentNode.classList.add('filled')
+    })
+});

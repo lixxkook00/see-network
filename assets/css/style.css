@@ -266,6 +266,21 @@ body {
   padding-top: 14px;
   font-size: 14px;
 }
+
+.passport .item.filled {
+  border: 1px solid #00a77c;
+  box-shadow: 0 4px 12px 0 rgba(0, 167, 147, 0.1);
+}
+.passport .item.filled .tips {
+  top: 7px;
+  font-size: 12px;
+  color: #999;
+}
+.passport .item.filled uni-input {
+  padding-top: 14px;
+  font-size: 14px;
+}
+
 .passport .item .tips.on {
   top: 7px;
   font-size: 12px;
@@ -2079,6 +2094,44 @@ body {
 .dapp .mine .link > ul > li:hover {
   opacity: 0.88;
 }
+
+.dapp .mine .link > ul > li > a {
+  height: 45px;
+  line-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.dapp .mine .link > ul > li > a:last-child {
+  border-bottom: none;
+}
+.dapp .mine .link > ul > li > a > .icon {
+  width: 41px;
+  text-align: center;
+  padding-right: 4px;
+  color: #C23122;
+}
+.dapp .mine .link > ul > li > a > .icon > uni-text {
+  font-size: 22px;
+  color: #aaa;
+}
+.dapp .mine .link > ul > li > a > .name {
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+.dapp .mine .link > ul > li > a > .more {
+  width: 28px;
+  color: #999;
+}
+.dapp .mine .link > ul > li > a:hover {
+  opacity: 0.88;
+}
+
+
 .dapp .opage {
   height: auto;
   width: 100%;
@@ -2431,6 +2484,21 @@ body {
   padding-top: 14px;
   font-size: 14px;
 }
+
+.form .item.filled {
+  border: 1px solid #00a77c;
+  box-shadow: 0 4px 12px 0 rgba(0, 167, 147, 0.1);
+}
+.form .item.filled .tips {
+  top: 5px;
+  font-size: 12px;
+  color: #666;
+}
+.form .item.filled uni-input {
+  padding-top: 14px;
+  font-size: 14px;
+}
+
 .form .item .tips.on {
   top: 5px;
   font-size: 12px;
@@ -2465,7 +2533,7 @@ body {
   padding: 0 12px;
   z-index: 12;
   min-width: 52px;
-  background: #00a77c;
+  background: #DB6626;
   color: #fff;
 }
 .form .item .send > span {
