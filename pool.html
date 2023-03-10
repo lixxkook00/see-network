@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <uni-app class="uni-app--showtabbar uni-app--maxwidth">
+        <uni-page data-page="pages/index">
+
+            <uni-page-wrapper>
+                <uni-page-body>
+                    <uni-view class="root">
+                        <uni-view class="dapp" style="border-top: 0px solid rgb(246, 246, 246);">
+
+                            <!-- navigate -->
+                            <uni-view class="navigate" style="padding-top: 0px; height: 55px;">
+                                <uni-view class="left">
+                                    <uni-text><span>Dashboard</span></uni-text>
+                                </uni-view>
+                                <uni-view class="right">
+                                    <uni-view class="lang a">
+                                        <i class="fa-solid fa-globe"></i>
+                                        EN
+                                    </uni-view>
+                                    <uni-view class="chat a">
+                                        <uni-text class="uc uc-service"><span></span></uni-text>
+                                        <span></span>
+                                    </uni-view>
+                                </uni-view>
+                            </uni-view>
+                            <uni-view class="pt55"></uni-view>
+
+                            <!-- main -->
+                            <uni-view class="pool">
+                                <uni-view class="circle">
+                                    <uni-view class="round">
+                                        <uni-view class="white">
+                                            <uni-view class="vip"><span>VIP
+                                                    1</span></uni-view>
+                                            <uni-view class="rate">+<strong>2.50</strong>%</uni-view>
+                                            <uni-view class="state"><span class="btn1"></span><span
+                                                    class="btn2"></span><span class="btn3"></span><span
+                                                    class="btn4"></span><span class="btn5"></span></uni-view>
+                                        </uni-view>
+                                        <uni-view class="flash"></uni-view>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="pdata">
+                                    <uni-view class="poolinf">
+                                        <uni-view class="data">
+                                            <uni-view>
+                                                <p>Current hashrate</p>
+                                                <strong>10.00</strong>GH/s
+                                            </uni-view>
+                                            <uni-view>
+                                                <p>Daily earning</p>
+                                                <strong>0.250000</strong>USDT
+                                            </uni-view>
+                                        </uni-view>
+                                        <uni-view class="time">
+                                            <uni-view>
+                                                <uni-view class="point">55.58 %</uni-view>
+                                                <uni-view class="bg" style="width: 55.58%;"></uni-view>
+                                            </uni-view>
+                                            <p>Next earning</p>
+                                        </uni-view>
+                                    </uni-view>
+                                    <uni-view class="button">
+                                        <uni-button class="">Get more hashrate</uni-button>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="income">
+                                    <uni-view class="title">Mining list<span>View
+                                            all</span></uni-view>
+                                    <uni-view class="content">
+                                        <ul></ul>
+                                    </uni-view>
+                                </uni-view>
+                            </uni-view>
+                        </uni-view>
+
+                        <uni-view class="langModel">
+                            <uni-view class="mask"></uni-view>
+                            <uni-view class="main">
+                                <uni-view class="title">
+                                    Language
+                                    <uni-text class="uc uc-close"><span></span></uni-text>
+                                </uni-view>
+                                <ul>
+                                    <li class="a cur">English</li>
+                                    <li class="a">Español</li>
+                                    <li class="a">Pусский</li>
+                                    <li class="a">Deutsch</li>
+                                    <li class="a">Français</li>
+                                    <li class="a">Italiano</li>
+                                    <li class="a">Português</li>
+                                    <li class="a">Bahasa Indonesia</li>
+                                    <li class="a">Türkçe</li>
+                                    <li class="a">Tiếng Việt</li>
+                                    <li class="a">ไทย</li>
+                                    <li class="a">日本語</li>
+                                    <li class="a">한국어</li>
+                                    <li class="a">简体中文</li>
+                                    <li class="a">繁体中文</li>
+                                </ul>
+                            </uni-view>
+                        </uni-view>
+
+                    </uni-view>
+                </uni-page-body>
+            </uni-page-wrapper>
+        </uni-page>
+
+        <!-- bottom nav -->
+        <uni-tabbar class="uni-tabbar-bottom" style="">
+            <div class="uni-tabbar" style="background-color: rgb(255, 255, 255); backdrop-filter: none;">
+                <div class="uni-tabbar-border" style="background-color: rgba(255, 255, 255, 0.33);"></div>
+
+                <a href="/index.html" class="uni-tabbar__item ">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Home
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/price.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-money-bill"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Price
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/pool.html" class="uni-tabbar__item active">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;"> Pool
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/share.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Share
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/mine.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Mine
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="uni-placeholder" style="height: 55px;"></div>
+        </uni-tabbar>
+
+    </uni-app>
+</body>
+
+</html>
