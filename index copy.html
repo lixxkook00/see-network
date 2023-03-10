@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <uni-app class="uni-app--showtabbar uni-app--maxwidth">
+        <uni-page data-page="pages/index">
+
+            <uni-page-wrapper>
+                <uni-page-body>
+                    <uni-view class="root">
+                        <uni-view class="dapp" style="border-top: 0px solid rgb(246, 246, 246);">
+
+                            <!-- navigate -->
+                            <uni-view class="navigate" style="padding-top: 0px; height: 55px;">
+                                <uni-view class="left">
+                                    <uni-text><span>Dashboard</span></uni-text>
+                                </uni-view>
+                                <uni-view class="right">
+                                    <uni-view class="lang a">
+                                        <i class="fa-solid fa-globe"></i>
+                                        EN
+                                    </uni-view>
+                                    <uni-view class="chat a">
+                                        <uni-text class="uc uc-service"><span></span></uni-text>
+                                        <span></span>
+                                    </uni-view>
+                                </uni-view>
+                            </uni-view>
+                            <uni-view class="pt55"></uni-view>
+
+                            <!-- main -->
+                            <uni-view class="home">
+                                <uni-view class="assets">
+                                    <uni-view class="address">
+                                        UID:<strong>2276654</strong>
+                                        <i class="fa-regular fa-clone"></i>
+                                    </uni-view>
+                                    <uni-view class="balance">
+                                        <uni-view>
+                                            <p>Balance</p>
+                                            <strong>0.000000</strong>USDT
+                                        </uni-view>
+                                        <uni-view>
+                                            <p>Hashrate</p>
+                                            <strong>10.00</strong>GH/s
+                                        </uni-view>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="notice">
+                                    <uni-view class="bell">
+                                        <i class="fa-solid fa-volume-high"></i>
+                                    </uni-view>
+                                    <uni-view class="word">
+                                        <marquee scrollamount="3" behavior="scroll">100 GH/s Referral
+                                            Bonus; Special Promotion Rebates 15%!!!; Referral Purchase Rebates up to
+                                            23%;
+                                            Daily Rate and Incentive Up to 10%; Introduction of Miner Us Limited;
+                                        </marquee>
+                                    </uni-view>
+                                    <uni-view class="morr">
+                                        <i class="fa-solid fa-bars"></i>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="button">
+                                    <uni-view class="tabs">
+                                        <ul>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_1.eddde57a.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_1.eddde57a.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Deposit</p>
+                                                </uni-view>
+                                            </li>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_2.cb40a480.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_2.cb40a480.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Withdrawal</p>
+                                                </uni-view>
+                                            </li>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_3.91a5dd9e.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_3.91a5dd9e.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Referral</p>
+                                                </uni-view>
+                                            </li>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_4.c3d71ab0.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_4.c3d71ab0.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Notification</p>
+                                                </uni-view>
+                                            </li>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_5.dc56ab62.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_5.dc56ab62.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Help Center</p>
+                                                </uni-view>
+                                            </li>
+                                            <li>
+                                                <uni-view>
+                                                    <uni-image>
+                                                        <div
+                                                            style="background-image: url(&quot;/assets/images/tab_6.8a2f0721.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                        </div>
+                                                        <img src="/assets/images/tab_6.8a2f0721.png" draggable="false">
+                                                    </uni-image>
+                                                    <p>Logout</p>
+                                                </uni-view>
+                                            </li>
+                                        </ul>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="activity">
+                                    <uni-view class="title">Activity</uni-view>
+                                    <uni-view class="content">
+                                        <uni-view class="tearn">
+                                            <uni-view class="price"><strong>0.0000</strong>USDT</uni-view>
+                                            <uni-view class="tname">Total Earning</uni-view>
+                                            <uni-view class="image">
+                                                <uni-image style="height: 40px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/icon_02.a674eb81.svg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/icon_02.a674eb81.svg" draggable="false">
+                                                </uni-image>
+                                            </uni-view>
+                                        </uni-view>
+                                        <uni-view class="tpull">
+                                            <uni-view class="price"><strong>0.0000</strong>USDT</uni-view>
+                                            <uni-view class="tname">Total Withdrawal</uni-view>
+                                            <uni-view class="image">
+                                                <uni-image style="height: 44px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/icon_01.ccddd05c.svg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/icon_01.ccddd05c.svg" draggable="false">
+                                                </uni-image>
+                                            </uni-view>
+                                        </uni-view>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="analytics">
+                                    <uni-view class="title">Analytics</uni-view>
+                                    <uni-view class="content">
+                                        <uni-view class="user">
+                                            <uni-view class="number"><strong>737681</strong></uni-view>
+                                            <uni-view class="tname">Total Members</uni-view>
+                                            <uni-view class="image">
+                                                <uni-image>
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/account_icon.e336f78f.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <img src="/assets/images/account_icon.e336f78f.png"
+                                                        draggable="false">
+                                                </uni-image>
+                                            </uni-view>
+                                        </uni-view>
+                                        <uni-view class="hash">
+                                            <uni-view class="number"><strong>172947041.04</strong>GH/s</uni-view>
+                                            <uni-view class="tname">Pool Hashrate</uni-view>
+                                            <uni-view class="image">
+                                                <uni-image>
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/tps_icon.bd4695e2.png&quot;); background-position: center center; background-size: contain; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <img src="/assets/images/tps_icon.bd4695e2.png" draggable="false">
+                                                </uni-image>
+                                            </uni-view>
+                                        </uni-view>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="aboutus">
+                                    <uni-view class="title">About us</uni-view>
+                                    <uni-view class="content">
+                                        <uni-view class="text">Cloud mining offered a potentially
+                                            cost-effective way of mining for USDT in Tron&amp;Ether and other
+                                            cryptocurrencies. At the same time, both Quantitative trading and DeFi
+                                            technology will allow you to easily participate in blockchain transactions
+                                            with
+                                            a small amount of capital, and obtain stable income like
+                                            insurance.</uni-view>
+                                        <uni-view class="text">
+                                            <p>COMPANY REGISTRATION INFORMATION:</p>
+                                            <p>COMPANY NAME: See network</p>
+                                            <p>COMPANY REGISTRATION NO: 6686872</p>
+                                            <p>COMPANY ESTABLISH DATE : 2019 April</p>
+                                            <p>NY GOV APPROVAL: 2023 JANUARY 2</p>
+                                            <p>COMPANY ADDRESS:</p>
+                                            <p>55 Hudson Yards, New York, NY 10001</p>
+                                        </uni-view>
+                                        <uni-view class="image">
+                                            <uni-image>
+                                                <div
+                                                    style="background-image: url(&quot;/assets/images/about.636eabcf.png&quot;); background-position: center center; background-size: cover; background-repeat: no-repeat;">
+                                                </div>
+                                                <img src="/assets/images/about.636eabcf.png" draggable="false">
+                                            </uni-image>
+                                        </uni-view>
+                                    </uni-view>
+                                </uni-view>
+                                <uni-view class="partners">
+                                    <uni-view class="title">Best partners</uni-view>
+                                    <uni-view class="content">
+                                        <ul>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_1.458dccd0.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_1.458dccd0.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_2.3da2aeff.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_2.3da2aeff.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_3.2a074c79.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_3.2a074c79.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_4.42d5985e.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_4.42d5985e.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_5.56f204f1.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_5.56f204f1.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                            <li>
+                                                <uni-image style="height: 54px;">
+                                                    <div
+                                                        style="background-image: url(&quot;/assets/images/logo_6.4959ba6f.jpg&quot;); background-size: 100% 100%; background-repeat: no-repeat;">
+                                                    </div>
+                                                    <uni-resize-sensor>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                        <div>
+                                                            <div></div>
+                                                        </div>
+                                                    </uni-resize-sensor>
+                                                    <img src="/assets/images/logo_6.4959ba6f.jpg" draggable="false">
+                                                </uni-image>
+                                            </li>
+                                        </ul>
+                                    </uni-view>
+                                </uni-view>
+                            </uni-view>
+                        </uni-view>
+
+                        <uni-view class="langModel">
+                            <uni-view class="mask"></uni-view>
+                            <uni-view class="main">
+                                <uni-view class="title">
+                                    Language
+                                    <uni-text class="uc uc-close"><span></span></uni-text>
+                                </uni-view>
+                                <ul>
+                                    <li class="a cur">English</li>
+                                    <li class="a">Español</li>
+                                    <li class="a">Pусский</li>
+                                    <li class="a">Deutsch</li>
+                                    <li class="a">Français</li>
+                                    <li class="a">Italiano</li>
+                                    <li class="a">Português</li>
+                                    <li class="a">Bahasa Indonesia</li>
+                                    <li class="a">Türkçe</li>
+                                    <li class="a">Tiếng Việt</li>
+                                    <li class="a">ไทย</li>
+                                    <li class="a">日本語</li>
+                                    <li class="a">한국어</li>
+                                    <li class="a">简体中文</li>
+                                    <li class="a">繁体中文</li>
+                                </ul>
+                            </uni-view>
+                        </uni-view>
+
+                    </uni-view>
+                </uni-page-body>
+            </uni-page-wrapper>
+        </uni-page>
+
+        <!-- bottom nav -->
+        <uni-tabbar class="uni-tabbar-bottom" style="">
+            <div class="uni-tabbar" style="background-color: rgb(255, 255, 255); backdrop-filter: none;">
+                <div class="uni-tabbar-border" style="background-color: rgba(255, 255, 255, 0.33);"></div>
+
+                <a href="/index.html" class="uni-tabbar__item active">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Home
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/price.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-money-bill"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Price
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/pool.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;"> Pool
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/share.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Share
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="/mine.html" class="uni-tabbar__item">
+                    <div class="uni-tabbar__bd" style="height: 55px;">
+                        <div class="uni-tabbar__icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="uni-tabbar__label"
+                            style="color: rgb(51, 51, 51); font-size: 12px; line-height: normal; margin-top: 3px;">
+                            Mine
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="uni-placeholder" style="height: 55px;"></div>
+        </uni-tabbar>
+
+    </uni-app>
+</body>
+
+</html>
