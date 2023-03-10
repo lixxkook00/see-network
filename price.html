@@ -60,9 +60,10 @@
                                                 </uni-input>
                                                 <span>GH/s</span>
                                             </uni-view>
-                                            <uni-view><span>0.00</span>USDT</uni-view>
+                                            <uni-view><span id="packageValue">0.00</span>USDT</uni-view>
                                         </uni-view>
-                                        <uni-view class="earns">Daily earning<strong>0.00</strong>USDT</uni-view>
+                                        <uni-view class="earns">Daily earning<strong
+                                                id="packageEarn">0.00</strong>SEE</uni-view>
                                         <uni-view class="button">
                                             <uni-button class="">Buy Hashrate</uni-button>
                                         </uni-view>
@@ -86,11 +87,83 @@
                                 </uni-view>
                                 <uni-view class="order">
                                     <uni-view class="title">Order list</uni-view>
-                                    <uni-view class="content">
-                                        <ul></ul>
-                                    </uni-view>
+                                    <div class="package">
+                                        <div class="package-title">
+                                            <div class="package-name">
+                                                Package
+                                            </div>
+                                            <div class="package-value f0">
+                                                100
+                                            </div>
+                                        </div>
+
+                                        <a href="#top" class="package-button f0" onclick="handleBuyPacke(100)">
+                                            Choose
+                                        </a>
+                                    </div>
+
+                                    <div class="package">
+                                        <div class="package-title">
+                                            <div class="package-name">
+                                                Package
+                                            </div>
+                                            <div class="package-value f1">
+                                                500
+                                            </div>
+                                        </div>
+
+                                        <a href="#top" class="package-button f1" onclick="handleBuyPacke(500)">
+                                            Choose
+                                        </a>
+                                    </div>
+
+                                    <div class="package">
+                                        <div class="package-title">
+                                            <div class="package-name">
+                                                Package
+                                            </div>
+                                            <div class="package-value f2">
+                                                1000
+                                            </div>
+                                        </div>
+
+                                        <a href="#top" class="package-button f2" onclick="handleBuyPacke(1000)">
+                                            Choose
+                                        </a>
+                                    </div>
+
+                                    <div class="package">
+                                        <div class="package-title">
+                                            <div class="package-name">
+                                                Package
+                                            </div>
+                                            <div class="package-value f3">
+                                                5000
+                                            </div>
+                                        </div>
+
+                                        <a href="#top" class="package-button f3" onclick="handleBuyPacke(5000)">
+                                            Choose
+                                        </a>
+                                    </div>
+
+                                    <div class="package">
+                                        <div class="package-title">
+                                            <div class="package-name">
+                                                Package
+                                            </div>
+                                            <div class="package-value f4">
+                                                10,000
+                                            </div>
+                                        </div>
+
+                                        <a href="#top" class="package-button f4" onclick="handleBuyPacke(10000)">
+                                            Choose
+                                        </a>
+                                    </div>
+
                                     <uni-view class="more">
-                                        <!----><span>No data</span><!---->
+                                        <!-- <span>No data</span> -->
                                     </uni-view>
                                 </uni-view>
                             </uni-view>
@@ -203,5 +276,15 @@
     </uni-app>
 </body>
 <script src="/assets/js/main.js"></script>
+<script>
+    const packageValue = document.querySelector("#packageValue")
+    const packageEarn = document.querySelector("#packageEarn")
+
+    const handleBuyPacke = (amount) => {
+        console.log(packageValue, "amount")
+        packageValue.innerText = amount
+        packageEarn.innerText = amount * 0.125
+    }
+</script>
 
 </html>
