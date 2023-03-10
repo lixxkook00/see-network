@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="root">
+        <div class="passport">
+            <div class="navigate" style="top: 0px;">
+                <div class="left"></div>
+                <div class="right">
+                    <div class="lang a">
+                        <div class="uc uc-lang"><span></span></div>
+                        EN
+                    </div>
+                    <div class="chat a">
+                        <div class="uc uc-service"><span></span></div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="bg_top"></div>
+                <div class="bg_bottom"></div>
+                <div class="login" style="top: 66px;">
+                    <div class="logo">
+                        <div>
+                            <div>
+                                <img style="width: 100px" src="/assets/images/logo.png" draggable="false">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="title">Log in</div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <uni-input class="">
+                                <div class="uni-input-wrapper">
+                                    <div class="uni-input-placeholder input-placeholder"></div>
+                                    <input maxlength="140" step="" enterkeyhint="done" autocomplete="off" type=""
+                                        class="uni-input-input"><!---->
+                                </div>
+                            </uni-input>
+                            <div class="tips">Email address</div>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <uni-input class="">
+                                <div class="uni-input-wrapper">
+                                    <div class="uni-input-placeholder input-placeholder"></div>
+                                    <input maxlength="30" step="" enterkeyhint="done" autocomplete="off" type="password"
+                                        class="uni-input-input"><!---->
+                                </div>
+                            </uni-input>
+                            <!---->
+                            <div class="tips">Login password</div>
+                            <div class="show">
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="node">
+                            <uni-switch>
+                                <div class="uni-switch-wrapper">
+                                    <div class="uni-switch-input"
+                                        style="background-color: rgb(223, 223, 223); border-color: rgb(223, 223, 223);">
+                                    </div>
+                                    <div class="uni-checkbox-input" style="color: rgb(0, 167, 124); display: none;">
+                                    </div>
+                                </div>
+                            </uni-switch>
+                            Remember &amp; Auto login
+                        </div>
+                        <a href="/index.html" class="node">
+                            <uni-button class="btn">Log in</uni-button>
+                        </a>
+                        <a href="/register.html" class="node">
+                            <uni-button class="txt">Sign up</uni-button>
+                        </a>
+                        <div class="node oauth">
+                            <!---->
+                            <div class="gg">
+                                <i class="fa-brands fa-google"></i>
+                                Login with google
+                            </div>
+                        </div>
+                        <div class="node">
+                            <div class="link">
+                                <i class="fa-solid fa-circle-question"></i>
+                                Forgot password?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <uni-view class="langModel">
+            <uni-view class="mask active"></uni-view>
+            <uni-view class="main active">
+                <uni-view class="title">
+                    Language
+                    <uni-text class="uc uc-close"><span></span></uni-text>
+                </uni-view>
+                <ul>
+                    <li class="a cur">English</li>
+                    <li class="a">Español</li>
+                    <li class="a">Pусский</li>
+                    <li class="a">Deutsch</li>
+                    <li class="a">Français</li>
+                    <li class="a">Italiano</li>
+                    <li class="a">Português</li>
+                    <li class="a">Bahasa Indonesia</li>
+                    <li class="a">Türkçe</li>
+                    <li class="a">Tiếng Việt</li>
+                    <li class="a">ไทย</li>
+                    <li class="a">日本語</li>
+                    <li class="a">한국어</li>
+                    <li class="a">简体中文</li>
+                    <li class="a">繁体中文</li>
+                </ul>
+            </uni-view>
+        </uni-view>
+    </div>
+</body>
+
+</html>
