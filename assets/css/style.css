@@ -843,6 +843,7 @@ body {
   max-width: 720px;
   margin: auto;
   background-color: #f6f6f6;
+  padding-bottom: 63px;
 }
 .dapp.mini {
   min-height: 95vh;
@@ -947,7 +948,7 @@ body {
   width: 100%;
   display: block;
   padding: 4px 8px;
-  padding-bottom: 63px;
+  /* padding-bottom: 63px; */
 }
 .dapp .home .assets {
   height: 135px;
@@ -1933,7 +1934,7 @@ body {
 .dapp .mine .info {
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(115deg, #00a77c, #5dcb97);
+  background: linear-gradient(115deg, #BA1D20, #F7A226);
   padding: 12px;
   color: #fff;
 }
@@ -2722,7 +2723,7 @@ body {
 .dapp .vip .banner {
   border-radius: 12px;
   overflow: hidden;
-  background: linear-gradient(115deg, #00a77c, #5dcb97);
+  background: linear-gradient(1turn, #BA1D20, #F7A226);
   padding: 12px;
   color: #fff;
   position: relative;
@@ -2764,10 +2765,10 @@ body {
   bottom: 12px;
   display: inline-block;
   padding: 8px 12px;
-  background: linear-gradient(1turn, #ff720f, #ff8f3e);
+  background: linear-gradient(1turn,#FFF57D 10%,#ffbd39 90%);
   font-size: 13px;
   border-radius: 16px;
-  color: #fff;
+  color: #C23122;
   font-weight: 500;
   cursor: pointer;
 }
@@ -3436,6 +3437,7 @@ uni-tabbar.uni-tabbar-bottom .uni-tabbar {
 uni-page-head .uni-page-head {
   max-width: 720px;
   margin: auto;
+  width: 100%;
 }
 
 
@@ -4347,7 +4349,10 @@ uni-page-head .uni-page-head-bd {
     margin: 0 2px;
     word-break: keep-all;
     white-space: pre;
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    padding-left: 8px;
+    justify-content: flex-start;
 }
 
 .uni-page-head-transparent .uni-page-head-btn {
@@ -4479,7 +4484,7 @@ uni-page-head .uni-page-head__title {
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 uni-page-head .uni-page-head__title .uni-loading {
