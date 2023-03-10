@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>See Network</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -15,7 +15,6 @@
 <body>
     <uni-app class="uni-app--showtabbar uni-app--maxwidth">
         <uni-page data-page="pages/index">
-
             <uni-page-wrapper>
                 <uni-page-body>
                     <uni-view class="root">
@@ -458,8 +457,22 @@
             <div class="uni-placeholder" style="height: 55px;"></div>
         </uni-tabbar>
 
+        <!-- loading -->
+        <div id="loading">
+            <div class="loading-logo">
+                <img src="/assets/images/logo.png" alt="">
+            </div>
+        </div>
+
     </uni-app>
 </body>
 <script src="/assets/js/main.js"></script>
+<script>
+    window.addEventListener('load', (event) => {
+        setTimeout(() => {
+            document.querySelector('#loading').style.display = "none"
+        }, 200)
+    });
+</script>
 
 </html>
