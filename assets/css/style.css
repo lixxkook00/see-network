@@ -93,7 +93,7 @@ body {
   text-align: center;
   line-height: 24px;
   border-radius: 12px;
-  background: #fff;
+  background: linear-gradient(0.24turn, #BA1D20, #F7A226);
   position: relative;
 }
 .passport .navigate .right .chat > uni-text {
@@ -1979,6 +1979,27 @@ body {
   width: 50%;
   text-align: center;
 }
+
+.dapp .mine .info .button > a {
+  width: 50%;
+  text-align: center;
+}
+
+.dapp .mine .info .button > a > uni-button {
+  font-size: 15px;
+  height: 41px;
+  line-height: 41px;
+  background: linear-gradient(1turn, #fef5db, #f5e6bd);
+  color: #555;
+  font-weight: 500;
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+}
+.dapp .mine .info .button > a > uni-button:hover {
+  opacity: 0.88;
+}
+
 .dapp .mine .info .button > uni-view > uni-button {
   font-size: 15px;
   height: 41px;
@@ -1999,6 +2020,14 @@ body {
 .dapp .mine .info .button > uni-view:last-child {
   padding-left: 6px;
 }
+
+.dapp .mine .info .button > a:first-child {
+  padding-right: 6px;
+}
+.dapp .mine .info .button > a:last-child {
+  padding-left: 6px;
+}
+
 .dapp .mine .link {
   display: block;
   margin-top: 24px;
@@ -7884,6 +7913,9 @@ body::after {
     font-weight: 500;
     padding: 0 12px;
     text-shadow: 1px 2px 3px rgb(0 0 0 / 15%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .langModel .main {
