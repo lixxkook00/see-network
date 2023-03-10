@@ -457,6 +457,55 @@
             <div class="uni-placeholder" style="height: 55px;"></div>
         </uni-tabbar>
 
+        <uni-view id="notiCountdown" class="noticeModel active">
+            <uni-view id="notiCountdownOverlay" class="mask active"></uni-view>
+            <uni-view class="main active">
+                <uni-view class="title">Latest announcement</uni-view>
+                <uni-view id="countdown" class="content">
+                    <div class="countdown-wrapper">
+                        <div class="countdown-item">
+                            <div id="countdownDays" class="countdown-value">
+                                7
+                            </div>
+                            <div class="countdown-unit">
+                                d
+                            </div>
+                        </div>
+
+                        <div class="countdown-item">
+                            <div id="countdownHours" class="countdown-value">
+                                00
+                            </div>
+                            <div class="countdown-unit">
+                                h
+                            </div>
+                        </div>
+
+                        <div class="countdown-item">
+                            <div id="countdownMinutes" class="countdown-value">
+                                00
+                            </div>
+                            <div class="countdown-unit">
+                                m
+                            </div>
+                        </div>
+
+                        <div class="countdown-item">
+                            <div id="countdownSeconds" class="countdown-value">
+                                00
+                            </div>
+                            <div class="countdown-unit">
+                                s
+                            </div>
+                        </div>
+                    </div>
+                </uni-view>
+                <uni-view class="action">
+                    <span id="closeNoti">Close</span>
+                </uni-view>
+            </uni-view>
+        </uni-view>
+
         <!-- loading -->
         <div id="loading">
             <div class="loading-logo">
@@ -473,6 +522,52 @@
             document.querySelector('#loading').style.display = "none"
         }, 200)
     });
+</script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mar 17, 2023 20:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        // document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        //     + minutes + "m " + seconds + "s ";
+
+        document.getElementById("countdownDays").innerHTML = days
+        document.getElementById("countdownHours").innerHTML = hours
+        document.getElementById("countdownMinutes").innerHTML = minutes
+        document.getElementById("countdownSeconds").innerHTML = seconds
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "DDAY !!!";
+        }
+    }, 1000);
+
+    document.getElementById("closeNoti").onclick = () => {
+        document.getElementById("notiCountdown").classList.remove('active')
+    }
+
+    document.getElementById("notiCountdownOverlay").onclick = () => {
+        document.getElementById("notiCountdown").classList.remove('active')
+    }
+
+
 </script>
 
 </html>
