@@ -33,3 +33,19 @@ inputEffect.forEach(element => {
         element.parentNode.parentNode.parentNode.classList.add('filled')
     })
 });
+
+// copy to clipboard
+
+const handleCopyToClipBoard = (string,id,originText) => {
+    navigator.clipboard.writeText(string);
+
+    document.querySelector(`#${id}`).innerHTML = `
+        <div class="copied">
+            <i class="fa-regular fa-circle-check"></i>
+        </div>
+    `
+
+    setTimeout(() => {
+        document.querySelector(`#${id}`).innerText = originText
+    },2000)
+}

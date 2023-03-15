@@ -1499,6 +1499,7 @@ body {
   flex-direction: column;
   justify-content: center;
   z-index: 2;
+  /* border: 1px solid black; */
 }
 .dapp .pool .circle .flash {
   position: absolute;
@@ -1507,16 +1508,16 @@ body {
   left: 0;
   bottom: 0;
   border-radius: 50%;
-  background: linear-gradient(0deg, #ff720e, #ffda94);
+  background: linear-gradient(1deg,#fff5f5 2%,#F8CF2D 98%);
   z-index: 1;
   -webkit-animation: flashCircle 5s infinite linear;
-  animation: flashCircle 5s infinite linear;
+  animation: flashCircle 3s infinite linear;
 }
 .dapp .pool .vip {
   padding-bottom: 12px;
 }
 .dapp .pool .vip > span {
-  background: linear-gradient(115deg, #BA1D20, #F7A226);
+  background: linear-gradient(1deg,#F9CF2D 10%,#F8CF2D 90%);
   color: #fff;
   padding: 4px 8px;
   font-size: 14px;
@@ -1527,7 +1528,7 @@ body {
   padding: 2px 0;
   font-size: 16px;
   color: #888;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .dapp .pool .rate > strong {
   margin: 0 2px;
@@ -7239,7 +7240,7 @@ uni-cover-image,uni-cover-image img {
 }
 
 uni-cover-image[hidden] {
-    display: none
+    display: nonea
 }
 
 uni-cover-image .uni-cover-image {
@@ -8130,34 +8131,34 @@ a{
 
 .package-button.f0,
 .package-value.f0{
-  background-image: linear-gradient(90deg,#fff 10%,#ddd 90%);
+  background-image: linear-gradient(1deg,#F9CF2D 10%,#F8CF2D 90%);
 }
 
 .package-button.f1,
 .package-value.f1{
-  background-image: linear-gradient(90deg,#FFE59A 10%,#F58E2D 90%);
+  background-image: linear-gradient(90deg,#F59F24 10%,#F89D25 90%);
 }
 
 .package-button.f2,
 .package-value.f2{
-  background-image: linear-gradient(90deg,#D2E9E4 10%,#87AFBC 90%);
+  background-image: linear-gradient(90deg,#F46B1F 10%,#F66A24 90%);
 }
 
 .package-button.f3,
 .package-value.f3{
-  background-image: linear-gradient(90deg,#FFF57D 10%,#FFBD39 90%);
+  background-image: linear-gradient(90deg,#F43F1E 10%,#EE4124 90%);
 }
 
 .package-button.f4,
 .package-value.f4{
-  background-image: linear-gradient(90deg,#F6C2FC 10%,#B571BB 90%);
+  background-image: linear-gradient(90deg,#E42B1C 10%,#E52C1B 90%);
 }
 
 .package-button{
   color: #fff;
   height: 41px;
   border: 0;
-  border-radius: 20px;
+  border-radius: 12px;
   font-size: 16px;
   line-height: 41px;
   outline: 0;
@@ -8198,4 +8199,19 @@ a{
 
 .countdown-unit{
   padding-bottom: 10px;
+}
+
+.hammer{
+  width: 50px;
+  transform: scale(1.5) translate(6px,10px);
+}
+
+.coin-gif{
+  width: 100px;
+  padding-right: 35px;
+}
+
+.copied{
+  color: green;
+  transition: all 0.5s linear;
 }
