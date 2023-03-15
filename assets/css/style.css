@@ -8099,6 +8099,8 @@ a{
   background-color: #262626;
   border-radius: 10px;
   color: #fff;
+  background: url(../images/package-bg.jpg) center center;
+  background-size: cover;
 }
 
 .package-title{
@@ -8107,6 +8109,11 @@ a{
   justify-content: space-between;
 
   padding: 10px;
+}
+
+.package-name{
+  font-size: 18px;
+  font-weight: 800;
 }
 
 .package-value{
