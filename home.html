@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See Network</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/assets/css/home.css">
+</head>
+
+<body>
+    <div id="root">
+        <div>
+            <div id="navPC" class="nav_block___3yoK9">
+                <img class="nav_logo___37a_b" src="/assets/images/logo.png">
+                <div class="nav_list___21Z5z">
+                    <div class="nav_item___1KNVx">
+                        <p class="nav_item_title___6H0n8 ">About Us</p>
+                        <ul class="menu___2aNsy">
+                            <li class="menu_item___yopym ">
+                                Value
+
+                            </li>
+                            <li class="menu_item___yopym ">
+                                Mission
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav_item___1KNVx">
+                        <p class="nav_item_title___6H0n8 ">Dapp Marketplace</p>
+                        <ul class="menu___2aNsy show___kDxrZ">
+                            <li class="menu_item___yopym ">
+                                Guideline
+
+                            </li>
+                            <li class="menu_item___yopym active___3jnmL">
+                                Avive app
+                                <img class="active_back___2La-t"
+                                    src="/assets/images/yOP39cPbP18N_we0QJ0dOR7AbQAAAABJRU5ErkJggg__.png">
+                            </li>
+                            <li class="menu_item___yopym ">Product Design</li>
+                        </ul>
+                    </div>
+                    <div class="nav_item___1KNVx">
+                        <p class="nav_item_title___6H0n8 ">Ecosystem</p>
+                        <ul class="menu___2aNsy ">
+                            <li class="menu_item___yopym ">Social Infrastructure</li>
+                            <li class="menu_item___yopym ">SBT + Geolocation</li>
+                        </ul>
+                    </div>
+                    <div class="nav_item___1KNVx">
+                        <p class="nav_item_title___6H0n8 ">Tokenomics</p>
+                        <ul class="menu___2aNsy "></ul>
+                    </div>
+                    <div class="nav_item___1KNVx">
+                        <p class="nav_item_title___6H0n8 ">Team</p>
+                        <ul class="menu___2aNsy "></ul>
+                    </div>
+                </div>
+                <div class="link_block___c-KtW">
+                    <div class="link_item___1ydlk">
+                        <div class="link_item_back___t4O1N"></div>
+                        <span>WhitePaper</span>
+                    </div>
+                    <span class="link_space___3Emzx"></span>
+                    <div class="link_item___1ydlk">
+                        <div class="link_item_back___t4O1N"></div>
+                        <span>DownloadApp</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contentPC" class="back___m-LOu">
+                <div class="team_block___vdaH1">
+                    <img class="team_back_img___1ozlX" src="/assets/images/team_back.773b0da3.gif"><img
+                        class="team_people_img___2Zm-k" src="/assets/images/team_people.f6c1fa5e.png">
+                    <p class="team_title___3RJae">Team</p>
+                    <img class="guide_line___2nsQy left_top___1u_HX "
+                        src="data:image/png;base64,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"><img
+                        class="guide_line___2nsQy left_bottom___3GGe4 "
+                        src="data:image/png;base64,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"><img
+                        class="guide_line___2nsQy right_top___33sXX "
+                        src="data:image/png;base64,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"><img
+                        class="guide_line___2nsQy right_bottom___1bGEU "
+                        src="data:image/png;base64,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">
+                    <div class="person_info___3CsAr left_top___1u_HX">
+                        <p class="person_name___gjm_a ">Ivar Jansen</p>
+                        <p class="person_desc___1ezGL">Ivar Jansenis holds a Ph.D. in Computer Science from the
+                            University of
+                            Pennsylvania and a diploma in Statistics from Washington University. Previously, he has
+                            worked for 3 years
+                            at American Express, where he contributed to the development of several high-profile
+                            projects.</p>
+                    </div>
+                    <div class="person_info___3CsAr left_bottom___3GGe4">
+                        <p class="person_name___gjm_a ">James Yep</p>
+                        <p class="person_desc___1ezGL">James Yep is an entrepreneur with a BSE in Computer Science from
+                            Princeton
+                            University (2008) and an MBA from the University of Michigan's Stephen M. Ross School of
+                            Business (2014). He
+                            has worked at Amazon and Uber, as well as started his own company, and has extensive
+                            experience in startups
+                            and a strong technical background.</p>
+                    </div>
+                    <div class="person_info___3CsAr right_top___33sXX">
+                        <p class="person_name___gjm_a ">Conway Hunter</p>
+                        <p class="person_desc___1ezGL">Conway Hunter, University of California, Berkeley graduate with a
+                            degree in
+                            Computer Science. Proficient in Solidity, Ethereum, and smart contract development, with
+                            experience in
+                            deploying and testing blockchain applications. Strong analytical and problem-solving skills,
+                            with a passion
+                            for innovation and emerging technologies. Ex-Goolge and Uber.</p>
+                    </div>
+                    <div class="person_info___3CsAr right_bottom___1bGEU">
+                        <p class="person_name___gjm_a ">Manaf Alnahar</p>
+                        <p class="person_desc___1ezGL">Manaf Alnaharis a Private Wealth Management Specialist from
+                            Yemen, who studied at
+                            Columbia University in 2010 with a double major in Economics and Chinese. He later received
+                            his Master's
+                            degree in Statistics from the University of Pennsylvania in 2016. He has been working at
+                            Goldman Sachs since
+                            then and has a proven track record in the financial services industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="phone_block___31sej">
+                <div class="value_back___2f_in">
+                    <img class="value_back_img___2H9MX" src="/assets/images/value_back.04442461.gif"><img
+                        class="value_img_lines___MX9j1" src="/assets/images/value_lines.ff6a159b.png"><img
+                        class="value_title___w8LOY" src="/assets/images/logo.png">
+                    <p class="value_desc1___A9NyI">
+                        Bắt đầu kết nối Mine See thông qua điện thoại thông minh của bạn và bắt đầu kiếm lợi nhuận
+                    </p>
+                    <p class="value_desc2___11_OU">Mine See</p>
+                    <p class="value_desc_phone___36wG3">
+                        Bắt đầu kết nối Mine See thông qua điện thoại thông minh của bạn và bắt đầu kiếm lợi nhuận
+                        <br>
+                        <br>
+                        <span class="value_desc_space_text___1_69l">Mine See</span>
+                    </p>
+                </div>
+
+                <div class="mission_back___2jOps">
+                    <img class="mission_plannet___1yvoi" src="/assets/images/mission_plannet.7b137088.png">
+                    <div class="mission_title_block___3TLqv">
+                        <img class="mission_title_icon___13UAf">
+                        <p class="mission_title_text___1e68S">Tầm nhìn</p>
+                    </div>
+                    <p class="mission_desc___36KyC">
+                        Tập trung vào việc xây dựng một
+                        hệ sinh thái sử dụng đầy đủ các cơ hội đáng kinh ngạc do chuỗi khối
+                        mang lại.
+                        <br><br>
+                        Từ đó mang lại lợi nhuận
+                        cho các nhà đầu tư.
+                        <br><br>
+                        Giúp các nhà đầu tư tiếp cận và
+                        kiếm lợi nhuận một cách dễ dàng
+                        nhất từ thị trường Crypto.
+                    </p>
+                    <div class="mission_back_block___2MbmX">
+                        <img class="mission_back_img___1C0rO" src="/assets/images/mission_back.65ada919.png">
+                        <img class="mission_back_rollup___Y9-C7">
+                    </div>
+                </div>
+
+                <div class="guide_block___Tnx_S">
+                    <img class="guide_back_img___31Ayk" src="/assets/images/guide_back.14132a9b.png">
+                    <p class="guide_title___1ZluY">Dapp marketplace For<br><span
+                            class="guide_green_text___33dOE">developers</span> And <span
+                            class="guide_green_text___33dOE">Applications</span></p>
+                    <p class="guide_desc___fUjFV guide_desc1___2ZwqP">
+                        MINESEE là một dự án tiền kỹ thuật số nhằm mở rộng tầm
+                        ảnh hưởng của blockchain và giúp các nhà đầu tư dễ dàng
+                        tiếp cận công nghệ blockchain. Chúng tôi cung cấp mã thông
+                        báo SEE để các nhà đầu tư có thể kiếm được lợi nhuận thông
+                        qua việc khai thác mã thông báo SEE hàng ngày mà không
+                        cần phần cứng đắt tiền.
+                    </p>
+                    <p class="guide_desc___fUjFV guide_desc2___3A_Bc">
+                        Hãy bắt đầu khai thác SEE miễn phí
+                        và giới thiệu bạn bè của bạn để có tốc độ khai thác nhanh
+                        hơn.
+                        SEE Token sử dụng cơ chế đồng thuận ngang hàng (peer 2
+                        peer) để hoạt động mà không cần thông qua cơ quan trung
+                        ương nào, những thành viên nắm giữ SEE Token sẽ được
+                        toàn quyền quản lý giao dịch hoặc có thể đặt cược (Stake)
+                        SEE yêu cầu khóa mã thông báo theo mặc định.
+                    </p>
+                    <div class="guide_info_block___1qosE undefined">
+                        <div class="guide_info_title_block___1Mh-0">
+                            <img class="guide_info_title_icon___14aaY">
+                            <p class="guide_info_title_text___3T48V">Dapp marketplace</p>
+                        </div>
+                        <div class="guide_info_desc_block___z6hrb">
+                            <div class="guide_info_desc_back___2CCIG"></div>
+                            <p class="guide_info_desc___3s6gk">
+                                MINESEE là một dự án tiền kỹ thuật số nhằm mở rộng tầm
+                                ảnh hưởng của blockchain và giúp các nhà đầu tư dễ dàng
+                                tiếp cận công nghệ blockchain. Chúng tôi cung cấp mã thông
+                                báo SEE để các nhà đầu tư có thể kiếm được lợi nhuận thông
+                                qua việc khai thác mã thông báo SEE hàng ngày mà không
+                                cần phần cứng đắt tiền.
+                            </p>
+                        </div>
+                        <div class="guide_info_desc_block___z6hrb">
+                            <div class="guide_info_desc_back___2CCIG"></div>
+                            <p class="guide_info_desc___3s6gk">
+                                Hãy bắt đầu khai thác SEE miễn phí
+                                và giới thiệu bạn bè của bạn để có tốc độ khai thác nhanh
+                                hơn.
+                                SEE Token sử dụng cơ chế đồng thuận ngang hàng (peer 2
+                                peer) để hoạt động mà không cần thông qua cơ quan trung
+                                ương nào, những thành viên nắm giữ SEE Token sẽ được
+                                toàn quyền quản lý giao dịch hoặc có thể đặt cược (Stake)
+                                SEE yêu cầu khóa mã thông báo theo mặc định.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gain_back___FDJGk">
+                    <div class="video_back_block___20x1U">
+                        <div class="black_back___1J5MO"></div>
+                        <video class="video___3JIC3" autoplay="" loop="">
+                            <source src="/d54df9d0953feed424ada81283cef628.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="gain_title___3vUvP">MINE SEE</p>
+                    <p class="gain_desc___2i1nz">1ST DAPP ON AVIVE CHAIN</p>
+                    <p class="gain_split_line___H9IBl"></p>
+                    <div class="gain_info_block___Yd9RA left_top___3GQNz">
+                        <div class="gain_info_title_block___1XH6J">
+                            <img class="gain_info_title_icon___2-9SN">
+                            <p class="gain_info_title_text___2NYhZ">daily airdrop</p>
+                        </div>
+                        <div class="gain_info_desc_block___1ZRZe">
+                            <div class="gain_info_desc_back___1sSGi"></div>
+                            <p class="gain_info_desc___kWuw_">Earn free tokens to by sign into app and claim airdrop on
+                                a
+                                daily basis</p>
+                        </div>
+                    </div>
+                    <div class="gain_info_block___Yd9RA left_bottom___19zdH">
+                        <div class="gain_info_title_block___1XH6J">
+                            <img class="gain_info_title_icon___2-9SN">
+                            <p class="gain_info_title_text___2NYhZ">teamup to earn</p>
+                        </div>
+                        <div class="gain_info_desc_block___1ZRZe">
+                            <div class="gain_info_desc_back___1sSGi"></div>
+                            <p class="gain_info_desc___kWuw_">Connect your social dots by teamup and get rewards from
+                                your
+                                community connections</p>
+                        </div>
+                    </div>
+                    <div class="gain_phone___N_6Cb gain_big_phone___3Qc8d"><img class="gain_screen___137wz"
+                            src="/assets/images/screen1.png"></div>
+                    <div class="gain_phone___N_6Cb gain_small_phone___2zoVK"><img class="gain_screen___137wz"
+                            src="/assets/images/screen2.png"></div>
+                    <div class="gain_phone_spacing___3imCu"></div>
+                </div>
+
+                <div class="product_back___1hNhl">
+                    <img class="product_back_img___3AFC4" src="/assets/images/product_back_img.cbfd20d2.png">
+                    <div class="video_back_block___1OOAP">
+                        <video class="video___6-Pdl" autoplay="" loop="">
+                            <source src="/assets/images/cc98781d7d305780ef476f5a6b1579d0.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p class="product_main_desc___-Pp2H">
+                        NHỮNG KHÁC BIỆT CỦA MINESEE
+                    </p>
+                    <div class="product_info_block___33Pn4 left_top___3Bkb2">
+                        <div class="product_info_title_block___3z_B4">
+                            <img class="product_info_title_icon___WPS1M">
+                            <p class="product_info_title_text___3Rxsj">
+                                Đơn giản
+                            </p>
+                        </div>
+                        <div class="product_info_desc_block___27rGv">
+                            <div class="product_info_desc_back___zJ_5M"></div>
+                            <p class="product_info_desc___3HX0U">
+                                Bắt đầu kết nối cùng MineSee chỉ
+                                thông qua điện thoại thông minh.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_info_block___33Pn4 left_bottom___rS5ol">
+                        <div class="product_info_title_block___3z_B4">
+                            <img class="product_info_title_icon___WPS1M">
+                            <p class="product_info_title_text___3Rxsj">
+                                Tốc độ
+                            </p>
+                        </div>
+                        <div class="product_info_desc_block___27rGv">
+                            <div class="product_info_desc_back___zJ_5M"></div>
+                            <p class="product_info_desc___3HX0U">
+                                Tăng tốc độ đào SEE thông qua
+                                việc giới thiệu MineSee đến bạn bè.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product_info_block___33Pn4 right___C_muf">
+                        <div class="product_info_title_block___3z_B4">
+                            <img class="product_info_title_icon___WPS1M">
+                            <p class="product_info_title_text___3Rxsj">
+                                Kiếm lợi nhuận
+                            </p>
+                        </div>
+                        <div class="product_info_desc_block___27rGv">
+                            <div class="product_info_desc_back___zJ_5M"></div>
+                            <p class="product_info_desc___3HX0U">
+                                Nhờ sử dụng công nghệ PoS.–
+                                Nhận thêm lợi nhuận trên mã thông
+                                báo SEE thông qua việc đặt cược.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social_back___34fdf">
+                    <div class="social_img_group___vpxMm"><img class="social_img_body___3gktk"
+                            src="/assets/images/socialIntra_body.b805bb5e.gif"><img class="social_img_dna___2DOkl"
+                            src="/assets/images/socialIntra_dna.36c69627.png"></div>
+                    <div class="social_title_block___BUxac">
+                        <img class="social_title_icon___2oF4K">
+                        <p class="social_title_text___2r40m">SEECOIN TOKEN MINING</p>
+                    </div>
+                    <p class="social_desc_text___3ZJjn social_desc_text1___37usC">
+                        SEECOIN TOKEN MINING với nền tảng công nghệ được phát triển với các lập trình viên giàu kinh
+                        nghiệm trong lĩnh vực
+                        blockchain đã phát triển ra hệ thống giao dịch OTC an toàn cho cả người mua và người bán, giải
+                        quyết các vấn đề của mọi
+                        người bằng công nghệ blockchain, mang blockchain ứng dụng rộng rãi trong cuộc sống.
+                    </p>
+                    <p class="social_desc_text___3ZJjn social_desc_text2___154ee">
+                        Thúc đẩy một hệ sinh thái phi tập trung sôi động, cho phép cộng tác, đổi mới và tác động xã hội
+                        lớn hơn.
+                    </p>
+                </div>
+
+                <div class="token_block___AwACJ">
+                    <p class="token_title____Tp4X">Tokenomics</p>
+                    <img class="token_back_img___3Y-70" src="/assets/images/token_back.2f374753.png"><img
+                        class="token_circle_img___3HS7r" src="/assets/images/token_circle_whole.d421e259.png"><img
+                        class="token_circle_out_img___1JDD9" src="/assets/images/token_out_circle.3b785f9d.png"><img
+                        class="token_coin_img___2jjan" src="/assets/images/logo.png">
+                    <div class="img_text_block___1g9-2 left_top___XV6Dz">
+                        <div class="img_text_icon_border___1L0eM">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <p class="imget_text_text___1jsT9">Ecosystem</p>
+                    </div>
+                    <div class="img_text_block___1g9-2 left_bottom___SomJM">
+                        <div class="img_text_icon_border___1L0eM">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <p class="imget_text_text___1jsT9">Tech Inovation</p>
+                    </div>
+                    <div class="img_text_block___1g9-2 top___2Yt1M">
+                        <div class="img_text_icon_border___1L0eM">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <p class="imget_text_text___1jsT9">Treasury Reserve</p>
+                    </div>
+                    <div class="img_text_block___1g9-2 right_top___vS5z8">
+                        <div class="img_text_icon_border___1L0eM">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <p class="imget_text_text___1jsT9">Utility/Incubatees</p>
+                    </div>
+                    <div class="img_text_block___1g9-2 right_bottom___3ehc8">
+                        <div class="img_text_icon_border___1L0eM">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <p class="imget_text_text___1jsT9">Early BirdS</p>
+                    </div>
+                </div>
+
+                <div class="team_block___vdaH1">
+                    <img class="team_back_img___1ozlX" src="/assets/images/team_back.773b0da3.gif"><img
+                        class="team_people_img___2Zm-k" src="/assets/images/team_people.f6c1fa5e.png">
+                    <p class="team_title___3RJae">Team</p>
+                    <img class="guide_line___2nsQy left_top___1u_HX active___zIQi4"
+                        class="guide_line___2nsQy left_bottom___3GGe4 " class="guide_line___2nsQy right_top___33sXX " g
+                        class="guide_line___2nsQy right_bottom___1bGEU ">
+                    <div class="person_info___3CsAr left_top___1u_HX">
+                        <p class="person_name___gjm_a active___zIQi4">Ivar Jansen</p>
+                        <p class="person_desc___1ezGL">Ivar Jansenis holds a Ph.D. in Computer Science from the
+                            University
+                            of Pennsylvania and a diploma in Statistics from Washington University. Previously, he has
+                            worked for 3 years at American Express, where he contributed to the development of several
+                            high-profile projects.</p>
+                    </div>
+                    <div class="person_info___3CsAr left_bottom___3GGe4">
+                        <p class="person_name___gjm_a ">James Yep</p>
+                        <p class="person_desc___1ezGL">James Yep is an entrepreneur with a BSE in Computer Science from
+                            Princeton University (2008) and an MBA from the University of Michigan's Stephen M. Ross
+                            School
+                            of Business (2014). He has worked at Amazon and Uber, as well as started his own company,
+                            and
+                            has extensive experience in startups and a strong technical background.</p>
+                    </div>
+                    <div class="person_info___3CsAr right_top___33sXX">
+                        <p class="person_name___gjm_a ">Conway Hunter</p>
+                        <p class="person_desc___1ezGL">Conway Hunter, University of California, Berkeley graduate with a
+                            degree in Computer Science. Proficient in Solidity, Ethereum, and smart contract
+                            development,
+                            with experience in deploying and testing blockchain applications. Strong analytical and
+                            problem-solving skills, with a passion for innovation and emerging technologies. Ex-Goolge
+                            and
+                            Uber.</p>
+                    </div>
+                    <div class="person_info___3CsAr right_bottom___1bGEU">
+                        <p class="person_name___gjm_a ">Manaf Alnahar</p>
+                        <p class="person_desc___1ezGL">Manaf Alnaharis a Private Wealth Management Specialist from
+                            Yemen,
+                            who studied at Columbia University in 2010 with a double major in Economics and Chinese. He
+                            later received his Master's degree in Statistics from the University of Pennsylvania in
+                            2016. He
+                            has been working at Goldman Sachs since then and has a proven track record in the financial
+                            services industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/home.js"></script>
+
+</html>
