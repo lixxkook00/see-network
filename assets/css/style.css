@@ -1822,8 +1822,8 @@ body {
   border-bottom: 2px solid hsla(0, 0%, 39.2%, 0.15);
 }
 .dapp .share .code .val > uni-text {
-  font-size: 18px;
-  font-weight: 600;
+  /* font-size: 18px;
+  font-weight: 600; */
 }
 .dapp .share .code > uni-view:last-child .val > uni-text {
   font-size: 13px;
@@ -8223,4 +8223,41 @@ a{
 
 .w-100{
   width: 100%;
+}
+
+
+.menu-icon{
+  height: 52px;
+  width: 52px;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  background-color: #FEF6DB;
+  border-radius: 50%;
+}
+
+.menu-icon i {
+  color: #F89319;
+  font-size: 20px;
+}
+
+.bell,
+.morr{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swap-icon{
+  font-size: 22px;
+  color: #ddd;
+  margin-bottom: 10px;
 }

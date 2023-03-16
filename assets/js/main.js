@@ -32,7 +32,13 @@ inputEffect.forEach(element => {
     element.addEventListener("change", (event) => {
         element.parentNode.parentNode.parentNode.classList.add('filled')
     })
+
+    if(element.value){
+        element.parentNode.parentNode.parentNode.classList.add('filled')
+    }
 });
+
+
 
 // copy to clipboard
 
