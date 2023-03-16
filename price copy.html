@@ -43,8 +43,8 @@
                             <uni-view class="price">
                                 <uni-view class="total">
                                     <uni-view class="info">
-                                        <p>Package Price</p>
-                                        <strong id="packagePrice"></strong>
+                                        <p>Account hashrate</p>
+                                        <strong>10.00</strong>GH/s
                                     </uni-view>
                                     <uni-view class="action">
                                         <uni-view class="balance"><span>Available
@@ -280,14 +280,10 @@
 <script>
     const packageValue = document.querySelector("#packageValue")
     const packageEarn = document.querySelector("#packageEarn")
-    const packageHZ = document.querySelector("#buyHZ")
-    const packagePrice = document.querySelector("#packagePrice")
 
     const handleBuyPacke = (amount) => {
         console.log(packageValue, "amount")
         packageValue.innerText = amount
-        packagePrice.innerText = amount
-        packageHZ.value = amount
         packageEarn.innerText = amount * 0.125
     }
 </script>
