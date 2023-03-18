@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+    <title>FXCM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/updateLandingPage.css">
+
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/fxcm.css">
+
+    <!-- meta -->
+    <meta name="title" content="FXCM" />
+    <meta name="author" content="FXCM" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="FXCM">
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FXCM" />
+    <meta property="og:image" content="./assets/images/logo-color.png">
+    <meta property="og:description" content="FXCM">
+
+
+</head>
+
+<body>
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <img class="header-mobile-logo" src="./assets/images/logo.png" alt="">
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item soft-menu__item--active">
+                <a class="" href="#intro">
+                    <i class="fa-solid fa-house"></i> Home
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a class="" href="#strategy">
+                    <i class="fa-solid fa-bolt"></i> Strategy
+                </a>
+            </li>
+
+            <!-- <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#workflow">
+                    <i class="fa-solid fa-handshake"></i>Partners
+                </a>
+            </li> -->
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#workflow">
+                    <i class="fa-solid fa-money-bill-trend-up"></i> Invest with MINESEE
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#news">
+                    <i class="fa-solid fa-earth-oceania"></i> News
+                </a>
+            </li>
+
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a class="" href="#question">
+                    <i class="fa-solid fa-circle-question"></i> Q&A
+                </a>
+            </li>
+
+            <div class="soft-menu__item soft-menu__item-sub">
+                <a class="ref-link" href="">
+                    <i class="fa-solid fa-right-to-bracket"></i> SIGN IN
+                </a>
+            </div>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header hidden-m-t">
+        <div class="header-wrapper align-items-center d-flex justify-content-between">
+            <a href="/">
+                <img src="./assets/images/logo.png" alt="" class="header-logo">
+            </a>
+
+            <div class="header-nav d-flex">
+                <a href="#intro" class="header-nav-item centering">
+                    Home
+                </a>
+                <a href="#strategy" class="header-nav-item centering">
+                    Strategy
+                </a>
+                <!-- <a href="#workflow" class="header-nav-item centering">
+                    Partners
+                </a> -->
+                <a href="#workflow" class="header-nav-item centering">
+                    Invest with FXCM Capital
+                </a>
+                <a href="#news" class="header-nav-item centering">
+                    News
+                </a>
+                <a href="#question" class="header-nav-item centering">
+                    Q&A
+                </a>
+
+                <a href="#" class="primary-button">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTRO -->
+    <section id="intro" class="intro">
+        <div class="intro-bg">
+        </div>
+        <div class="intro-wrapper">
+            <div class="container intro-main">
+                <div class="grid grid-2 grid-m-1 h-100 centering">
+                    <div class="centering">
+                        <div class="intro-content">
+                            <div class="intro-title">
+                                MINESEE
+                            </div>
+
+                            <div class="intro-title-sub">
+                                FREE MINING/ EARN MONEY
+                            </div>
+
+                            <div class="intro-desc">
+                                The easiest way to become a crypto investor and earn money
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="intro-button primary-button primary-button-white wow bounceIn">
+                                    Earn SEE
+                                </div>
+
+                                <div class="intro-button text-white border-white primary-button wow bounceIn">
+                                    Whitepaper
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <img src="./assets/newImages/earth.png " alt=""> -->
+                    <div class="intro-img wow bounceIn">
+                        <!-- <canvas id="canvas"></canvas> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="" class="workflow">
+        <div class=" container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="workflow-img wow bounceInLeft"
+                        style="visibility: visible; animation-name: bounceInLeft;">
+                        <div id="workflow-img" class="workflow-img-wrapper">
+                            <img src="./assets/images/phone.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="workflow-content wow bounceInRight"
+                        style="visibility: visible; animation-name: bounceInRight;">
+                        <div class="primary-title">
+                            About MineSee
+                        </div>
+                        <div class="about-desc mb-3">
+                            MINESEE is a digital currency project that aims to expand the influence of blockchain and
+                            make it easy for investors to
+                            access blockchain technology. We provide SEE so investors can earn profit through daily SEE
+                            token mining without
+                            expensive hardware. Let's start mining SEE for free and refer your friends for faster mining
+                            speed.
+                        </div>
+
+                        <div class="grid grid-2 grid-m-1">
+                            <div class="about-item">
+                                <div class="about-left">
+                                    <div class="about-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="about-content">
+                                    <div class="about-title">
+                                        User Friendly
+                                    </div>
+                                    <div class="about-desc">
+                                        MineSee main objective is to build user-centered crypto products that even
+                                        inexperienced users can interact with easily.
+                                        Our dApps are also developed to operate optimally on any type of device, serving
+                                        both web and mobile users.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-item">
+                                <div class="about-left">
+                                    <div class="about-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="about-content">
+                                    <div class="about-title">
+                                        Secure
+                                    </div>
+                                    <div class="about-desc">
+                                        No account registration/No KYC (no personal information lost) – Just connect
+                                        through Metamask or Trust wallet
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-item">
+                                <div class="about-left">
+                                    <div class="about-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="about-content">
+                                    <div class="about-title">
+                                        Enegy Saving
+                                    </div>
+                                    <div class="about-desc">
+                                        No need to invest in expensive hardware equipment, MineSee provides the ability
+                                        to mine SEE tokens through mobile
+                                        devices.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-item">
+                                <div class="about-left">
+                                    <div class="about-icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                </div>
+                                <div class="about-content">
+                                    <div class="about-title">
+                                        Fully Decentralized
+                                    </div>
+                                    <div class="about-desc">
+                                        SEE Token Uses peer-to-peer consensus to work without any central authority. SEE
+                                        token holders can trade SEE anytime
+                                        through Dapp.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOINING -->
+    <section class="joinning">
+        <div class="container">
+            <div class="centering mb-4">
+                <div class="primary-title">
+                    Join With MineSee
+                </div>
+            </div>
+
+            <div class="joinning-content">
+                <div class="grid grid-3 grid-m-1">
+                    <div class="joinning-item">
+                        <div class="joinning-img">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div class="joinning-title ">
+                            CONNECT
+                        </div>
+                        <div class="joinning-content">
+                            Connect to MineSee quickly through the Metamask wallet on your phone.
+                        </div>
+                    </div>
+
+                    <div class="joinning-item">
+                        <div class="joinning-img">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="joinning-title ">
+                            EARN
+                        </div>
+                        <div class="joinning-content">
+                            Users Withdraw their SEE to their personal wallet or swap to USDT instantly.
+                        </div>
+                    </div>
+
+                    <div class="joinning-item">
+                        <div class="joinning-img">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <div class="joinning-title ">
+                            Referral
+                        </div>
+                        <div class="joinning-content">
+                            Refer MineSee to your friends and get more speed of SEE token mining.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ECONOMIC -->
+    <section id="workflow" class="workflow">
+        <div class=" container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="workflow-content wow bounceInRight"
+                        style="visibility: visible; animation-name: bounceInRight;">
+                        <div class="primary-title">
+                            MINESEE TOKEN
+                        </div>
+                        <div class="workflow-desc">
+                            <br>
+                            SEE Token Using peer-to-peer consensus mechanism to operate without any central authority,
+                            members holding SEE Token
+                            will have full control of transactions or can stake SEE and requires a token key by default.
+                            <br><br>
+                            This pushes token holders
+                            to choose between making a profit or maintaining liquidity.
+                            <br><br>
+                            The adoption of the
+                            Proof-of-Stake consensus algorithm makes
+                            it possible for anyone to mine and use SEE
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="workflow-img wow bounceInLeft"
+                        style="visibility: visible; animation-name: bounceInLeft;">
+                        <div id="workflow-img" class="workflow-img-wrapper">
+                            <img src="./assets/images/token-char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOKEN -->
+    <div class="token team-main">
+        <div class="container">
+            <div class="centering mb-5">
+                <div class="primary-title">
+                    Token Distrobution
+                </div>
+            </div>
+
+            <div class="grid grid-3 grid-m-1">
+                <div class="token-item">
+                    <div class="token-value primary-title">
+                        50%
+                    </div>
+                    <div class="toke-name">
+                        Community
+                    </div>
+                </div>
+                <div class="token-item">
+                    <div class="token-value primary-title">
+                        15%
+                    </div>
+                    <div class="toke-name">
+                        Partner/DEV/Marketing
+                    </div>
+                </div>
+                <div class="token-item">
+                    <div class="token-value primary-title">
+                        5%
+                    </div>
+                    <div class="toke-name">
+                        Advisor
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TEAM -->
+    <div class="team-main">
+        <div class="centering mb-4">
+            <div class="primary-title">
+                MineSee's team
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="grid grid-3 grid-m-1">
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+                <div class="pack-card">
+                    <img src="https://hetery.org/storage/home/assets/images/crypto.png" alt="" class="pack-card-icon">
+
+                    <div class="team-main-content">
+                        <div class="pack-card-name">
+                            Jordan
+                        </div>
+
+                        <div class="pack-card-content">
+                            CTO
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PARTNER -->
+    <section class="partner">
+        <div class="centering">
+            <div class="primary-title">
+                Partner
+            </div>
+        </div>
+        <div class="product-slider">
+            <div class="product-slider-content">
+                <div class="product-slider-1">
+                    <div class="swiper swiper-product-1">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/Bitpanda.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/bitso-vector-logo.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/coindesk-seeklogo.com_.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/bitmex.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/Bitpanda.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/bitso-vector-logo.svg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="partner-img">
+                                    <img src="./assets/images/logo/coindesk-seeklogo.com_.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUESTION -->
+    <section id="question" class="question">
+        <div class="centering">
+            <div class="primary-title">
+                Frequently Asked Question
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="accordion mt-3" id="accordionExample">
+                        <div class="accordion-item question-item">
+                            <h2 class="accordion-header " id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            What is the MineSee Project?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    MINESEE is a digital currency project that aims to expand the influence of
+                                    blockchain and make it easy for investors to
+                                    access blockchain technology. We provide SEE so investors can earn profit through
+                                    daily SEE token mining without
+                                    expensive hardware. Let's start mining SEE for free and refer your friends for
+                                    faster mining speed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item question-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            How can I start Mine SEE ?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    You can start mining SEE tokens at MineSee for free - But what if you want more SEE?
+                                    Or join our optional packages.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item question-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            What are SEE smart contract addresses?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    SEE smart contract addresses:
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="accordion-item question-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            What Are You Really Trading?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Restored from DNA found in amber, this Pokémon exhibited ferocity that was greater
+                                    than expected. Some casualties
+                                    resulted.Bellsprout’s thin and flexible body lets it bend and sway to avoid any
+                                    attack, however strong it may be. From
+                                    its mouth, this Pokémon spits a corrosive fluid that melts even iron.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item question-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            What Currencies Trade in Forex?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Although some retail dealers trade exotic currencies such as the Thai baht or the
+                                    Czech koruna, the majority of dealers trade the seven most liquid currency pairs in
+                                    the world, which are the four &quot;majors&quot;:
+                                    <br>
+                                    EUR/USD (euro/dollar)
+                                    USD/JPY (dollar/Japanese yen)
+                                    GBP/USD (British pound/dollar)
+                                    USD/CHF (dollar/Swiss franc).
+                                    <br>
+                                    The three commodity pairs are also traded:
+                                    AUD/USD (Australian dollar/dollar)
+                                    USD/CAD (dollar/Canadian dollar)
+                                    NZD/USD (New Zealand dollar/dollar)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item question-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <div class="accor-title">
+                                        <div class="accor-title-text">
+                                            What Is a Currency Carry Trade?
+                                        </div>
+                                        <div class="accor-title-icon">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Carry is the most popular trade in the currency market, practiced by both the
+                                    largest
+                                    hedge funds and the smallest retail speculators. The carry trade is based on the
+                                    fact
+                                    that every currency in the world has an associated interest. These short-term
+                                    interest rates are set by the central banks of these countries: the Federal Reserve
+                                    in
+                                    the United States, the Bank of Japan in Japan, and the Bank of England in the United
+                                    Kingdom.
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="centering-mobile">
+                        <img src="./assets/images/logo.png" alt="" class="footer-logo">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12">
+                    <div class="footer-desc pt-2">
+                        MINESEE
+                        <br>
+                        FREE MINING/ EARN MONEY
+                        <br>
+                        The easiest way to become a crypto investor and earn money
+                    </div>
+                    <!-- <div class="footer-block">
+                        <div class="footer-title">
+                            Company
+                        </div>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Our Services</li>
+                            <li>Prices</li>
+                            <li>Plans</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div> -->
+                </div>
+
+                <!-- <div class="col-lg-3 col-6">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Categories
+                        </div>
+                        <ul>
+                            <li>Business</li>
+                            <li>Crypto Market</li>
+                            <li>Crypto News</li>
+                            <li>Security</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="col-lg-5">
+                    <div class="footer-block">
+                        <div class="footer-title">
+                            Newsletter
+                        </div>
+
+                        <div class="footer-letter-input d-flex align-items-center">
+                            <input type="text" placeholder="Enter you Email">
+
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                        </div>
+
+                        <div class="centering-mobile footer-social d-flex align-items-cente justify-content-start">
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-telegram"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="footer-social-icon centering">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-verify">
+            CopyRight @ MINESEE TEAM
+        </div>
+    </footer>
+
+    <!-- loading -->
+    <!-- <div id="loading" class="loading">
+        <img src="/assets/images/logo.png" alt="">
+        <img src="/assets/newImages/loading.gif" alt="">
+    </div> -->
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+
+</html>
+
+<script src="./assets/js/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+
+<script src="./assets/js/wow.min.js"></script>
+
+<script>
+    /*  
+       INIT WOWJS
+    */
+    wow = new WOW({
+        boxClass: "wow", // default
+        animateClass: "animated", // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true, // default
+    });
+    wow.init();
+
+    // SLIDER
+    var swiper4 = new Swiper(".swiper-product-1", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        // auto
+        autoplay: {
+            delay: 500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        loopedSlides: 50,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        speed: 4000,
+        breakpoints: {
+            // when window width is >= 480px
+            120: {
+                slidesPerView: 2,
+                spaceBetween: 2
+            },
+            // when window width is >= 640px
+            // when window width is >= 640px
+            740: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            1023: {
+                slidesPerView: 6,
+                spaceBetween: 20
+            }
+        },
+    });
+
+    const bind1 = document.querySelector.bind(document)
+    const bind2 = document.querySelectorAll.bind(document)
+
+    const toggleNavMobile = () => {
+        bind1('.soft-menu').classList.toggle('open')
+        bind1('.soft-menu__list').classList.toggle('open')
+    }
+
+    bind2('.soft-menu__item').forEach((element) => {
+        element.onclick = () => {
+            toggleNavMobile()
+        }
+    })
+
+    bind1('.scroll-to-top').onclick = () => {
+        window.scrollTo({
+            top: 0,
+            left: 100,
+            behavior: 'smooth'
+        });
+    }
+</script>

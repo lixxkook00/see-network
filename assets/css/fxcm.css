@@ -1,0 +1,199 @@
+html,body{
+    background-color: #fff;
+    color: #000;
+}
+
+.header{
+    color: #fff;
+    background-color: #fff;}
+
+.intro{
+    color: #fff;
+}
+
+.intro-wrapper{
+    background: linear-gradient(179deg, #BA1D20, #F7A226);
+    background-size: 100% 100%;
+    background-color: #fff !important;
+}
+
+.workflow-img{
+    height: 100%;
+}
+
+.intro-img img {
+    -webkit-mask-image: linear-gradient(178deg, #000000b8 80%, rgb(255 255 255 / 0%) 100%);
+}
+
+.hedging{
+    padding: 100px 0 100px;
+    background: url(../newImages/hedging-bg.png) no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.hedging .primary-title{
+    color: #fff;
+}
+
+.chart-bg{
+    background-image: none;
+    color: #fff;
+}
+
+.footer{
+    background-color: #000;
+    background-size: 100% 100%;
+    color: #fff;
+    background: no-repeat url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg) top center;
+    background-size: 100% auto;
+}
+
+.news{
+    padding: 50px;
+}
+
+.news-old{
+    padding-bottom: 0;
+}
+
+.workflow-title{
+    text-transform: uppercase;
+}
+
+.workflow-title-sub{
+    font-size: 18px !important;
+    text-transform: capitalize;
+    /* font-style: italic; */
+}
+
+.strategy-sub-title{
+    font-weight: 600;
+    font-style: normal !important;
+}
+
+.strategy{
+    /* background: url(../newImages/strategy-bg.png) no-repeat top center; */
+    background-size: 100% auto;
+    background-color: #fff;
+    color: #000;
+    padding: 50px 0;
+}
+
+.workflow-img-wrapper{
+    width: 70% !important;
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .intro-wrapper{
+        background-size: auto 100%;
+        padding: 100px 0 100px;
+    }
+
+    .workflow{
+        padding-top: 0 !important;
+    }
+
+    .workflow.hedging{
+        background-size: auto 100%;
+        padding-top: 100px !important;
+    }
+
+    .workflow-img-wrapper{
+        width: 100% !important;
+    }
+
+    .news{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .footer{
+        background-size: auto 100%;
+    }
+
+    .strategy{
+        padding-top: 30px !important;
+    }
+    
+    .workflow-title{
+        text-align: center;
+    }
+
+    .workflow-desc{
+        font-style: normal;
+    }
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    z-index: 100000;
+}
+
+.loading img:first-child{
+  width: 140px;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(30px);
+}
+
+.loading img:last-child{
+  max-width: 65px;
+}
+
+/* UPDATE ROADMAP */
+
+
+
+/* update earth */
+.intro-img{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.intro-img canvas {
+    /* width: 70vw;
+    max-width: 1200px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .intro-img{
+        transform: scale(0.8);
+    }
+
+    .intro-wrapper{
+        background-position: left center;
+    }
+}
+
+.intro-title-sub {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.intro-desc {
+    font-size: 18px;
+    font-weight: 300;
+    font-style: oblique;
+}
+
+
+.intro-button+.intro-button{
+    margin-left: 10px;
+}
+
+.primary-button-white{
+    background-color: #fff;
+    color: #B32924;
+}
