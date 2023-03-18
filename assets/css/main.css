@@ -1415,6 +1415,10 @@ select:focus-visible{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-5{
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .grid-1-2{
   grid-template-columns : 33% 66%;
 }
@@ -1680,4 +1684,51 @@ select:focus-visible{
 
 .soft-menu__item.hehe i{
     color: #fff;
+}
+
+.roadmap-wrapper{
+    padding: 20px;
+}
+
+.roadmap-icon{
+    text-align: center;
+    position: relative;
+    height: 85px;
+    width: 85px;
+
+    color: #F0441D;
+    font-weight: 600;
+    font-size: 18px;
+    border: 10px solid #F0441D;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+.roadmap-icon::after{
+    content: "";
+    position: absolute;
+    bottom: -90%;
+    height: 50px;
+    width: 2px;
+    background-color: #F0441D;
+}
+
+.roadmap-icon::before{
+    content: "";
+    position: absolute;
+    bottom: -90%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F0441D;
+}
+
+.roadmap-content{
+    text-align: center;
+    font-size: 15px;
 }
