@@ -138,7 +138,11 @@
 
 .pack-card-icon{
 	width: 60px;
+    height: 60px;
+    object-fit: cover;
+    overflow: hidden;
 	margin-right: 10px;
+    border-radius: 5px;
 }
 
 .pack-card-name{
