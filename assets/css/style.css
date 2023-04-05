@@ -8435,3 +8435,115 @@ a{
 #packagePrice{
   font-size: 30px;
 }
+
+.centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mining{
+  background: linear-gradient(115deg, #BA1D20, #F7A226);
+  width: 100%;
+  padding: 30px 50px 50px;
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 170px;
+  position: relative;
+}
+
+.mining-circle-1{
+  height: 200px;
+  width: 200px;
+  background-color: #F6F6F6;
+
+  border-radius: 50%;
+  position: relative;
+}
+
+.mining-circle-2{
+  height: 180px;
+  width: 180px;
+  background: linear-gradient(115deg, #BA1D20, #F7A226);
+
+  border-radius: 50%;
+}
+
+.mining-circle-3{
+  height: 160px;
+  width: 160px;
+  background-color: #F6F6F6;
+
+  border-radius: 50%;
+}
+
+.mining-circle-3{
+  flex-direction: column;
+}
+
+.mining-text{
+  font-size: 12px;
+}
+
+.mining-value{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.mining-hr{
+  color: green;
+  margin-bottom: 10px;
+}
+
+.mining-level{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+
+  background-color: #7BC856;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.mining-time{
+  margin: 10px 0 20px;
+}
+
+.mining-time i {
+  margin-right: 5px;
+}
+
+@keyframes dotRun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+.mining-circle-dot{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.5s linear;
+  animation: dotRun 5s linear infinite;
+  user-select: none; 
+  pointer-events: none; 
+}
+
+.mining-circle-dot::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #4389FD;
+}
