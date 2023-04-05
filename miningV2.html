@@ -45,6 +45,7 @@
                                     <div class="mining centering">
                                         <div class="mining-circle-1 centering">
                                             <div class="mining-circle-dot"></div>
+                                            <div id="progress"></div>
                                             <div class="mining-circle-2 centering">
                                                 <div class="mining-circle-3 centering">
                                                     <div class="mining-text">
@@ -214,5 +215,59 @@
     </uni-app>
 </body>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/progressbar.min.js"></script>
+<script>
+    // var bar = new ProgressBar.Circle('#progress', { easing: 'easeInOut' });
+    // bar.animate(0.5);
+    var bar = new ProgressBar.Circle('#progress', {
+        strokeWidth: 5.8,
+        easing: 'linear',
+        duration: 1000,
+        color: '#4389FD',
+        trailColor: 'transparent',
+        trailWidth: 1,
+        svgStyle: null
+    });
+
+    const dot = document.querySelector('.mining-circle-dot')
+
+    const DATE_BEGIN = new Date()
+    const DATE_END = new Date('4/6/2023')
+
+    const diffTime = Math.abs(DATE_END - DATE_BEGIN);
+
+    function padTo2Digits(num) {
+        return num.toString().padStart(2, '0');
+    }
+
+    function convertMsToTime(milliseconds) {
+        let seconds = Math.floor(milliseconds / 1000);
+        let minutes = Math.floor(seconds / 60);
+        let hours = Math.floor(minutes / 60);
+
+        seconds = seconds % 60;
+        minutes = minutes % 60;
+        hours = hours % 24;
+
+        return `${padTo2Digits(hours)}:${padTo2Digits(minutes)}:${padTo2Digits(
+            seconds,
+        )}`;
+    }
+
+    const handleMiningProgress = (percentLeft) => {
+        setInterval(() => {
+            percentLeft = percentLeft + 0.01
+
+            dot.style.transform = `rotate(${percentLeft * 360 - 3}deg)`;
+            bar.animate(percentLeft);
+            // const diffTime = Math.abs(DATE_END - new Date());
+            // console.log(diffTime / (24 * 60 * 60 * 1000))
+            // console.log(diffTime / 1000)
+        }, 1000)
+
+    }
+
+    handleMiningProgress(0.01)
+</script>
 
 </html>
